@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "./header"
-import GlobalStyle from "./styles/styles"
+import GlobalStyle from "../../styles/styles"
 import styled from "styled-components"
 
 const StyledWrapper = styled.div`

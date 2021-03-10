@@ -6,6 +6,10 @@ import styled from "styled-components"
 
 const StyledNav = styled.nav`
   padding: 12px 20px 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
 
   .nav-container-sm {
     height: 3rem;
@@ -29,27 +33,29 @@ const StyledMenu = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   &:focus {
     outline: none;
   }
 
   div {
-    width: 1.45rem;
+    width: 1.2rem;
     height: 3px;
     background: #333333;
     transition: all 0.25s ease-in-out;
-    transform-origin: 1.5px;
+    transform-origin: 8px;
+    border-radius: 4px;
 
     :first-child {
       transform: ${({ showSidebar }) =>
-        showSidebar ? "rotate(45deg)" : "rotate(0)"};
+        showSidebar ? "rotate(-30deg)" : "rotate(0)"};
     }
     :nth-child(2) {
-      opacity: ${({ showSidebar }) => (showSidebar ? 0 : 1)};
+      transform: ${({ showSidebar }) =>
+        showSidebar ? "rotate(30deg)" : "rotate(0)"};
     }
     :nth-child(3) {
-      transform: ${({ showSidebar }) =>
-        showSidebar ? "rotate(-45deg)" : "rotate(0)"};
+      opacity: ${({ showSidebar }) => (showSidebar ? 0 : 1)};
     }
   }
 `
