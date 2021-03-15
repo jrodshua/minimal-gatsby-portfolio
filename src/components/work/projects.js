@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 const ProjectContainer = styled.article`
-  width: 90%;
+  width: 95%;
   margin: 3rem auto 4rem;
   h1 {
     margin: 0;
