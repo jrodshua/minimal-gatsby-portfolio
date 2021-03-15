@@ -73,9 +73,6 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 800;
     }
 
-    hr {
-        margin: 0;
-    }
 
     p {
         font-size: 16px;

@@ -1,6 +1,7 @@
 export const projectObj = {
   usagi: {
-    title: `Usagi.Bakery eComm`,
+    type: `eCommerce Client`,
+    title: `Usagi.Bakery`,
     body: `A web app for visualizing personalized Spotify data. View your top
         artists, top tracks, recently played tracks, and detailed audio
         information about each track. Create and save new playlists of
@@ -13,12 +14,22 @@ export const projectObj = {
     ],
   },
   plantFather: {
-    title: `Plantfather Gatsby Starter`,
+    type: `Gatsby Starter`,
+    title: `Plantfather`,
     body: `A web app for visualizing personalized Spotify data. View your top
         artists, top tracks, recently played tracks, and detailed audio
         information about each track. Create and save new playlists of
         recommended tracks based on your existing playlists and more.`,
-    list: [],
+    list: [`NextJs/React`, `Stripe API`, `Bulma.io`, `SSR`],
+  },
+  jira: {
+    type: `Task Tracking Web App`,
+    title: `Jira4Peeps`,
+    body: `A web app for visualizing personalized Spotify data. View your top
+    artists, top tracks, recently played tracks, and detailed audio
+    information about each track. Create and save new playlists of
+    recommended tracks based on your existing playlists and more.`,
+    list: [`NextJS/React`, `Evergreen-Ui`, `SSR`, `MongoDB`],
   },
 }
 
@@ -28,6 +39,8 @@ export function getProject(project) {
       return projectObj.usagi
     case "plantFather":
       return projectObj.plantFather
+    case "jira":
+      return projectObj.jira
     default:
       return project
   }

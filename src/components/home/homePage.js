@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const HomeWrapper = styled.section`
+  margin-top: 10vh;
   height: 90vh;
-  margin: 60px 0 1rem 0;
 `
 
 const HomeContainer = styled.div`

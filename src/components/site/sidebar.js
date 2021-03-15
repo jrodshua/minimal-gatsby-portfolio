@@ -7,7 +7,7 @@ const SidebarContainer = styled.div`
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   outline: 0;
   z-index: 5;
   visibility: ${({ toggleOpen }) => (toggleOpen ? "visible" : "hidden")};
@@ -20,7 +20,7 @@ const StyledSidebar = styled.div`
   background: #ffffff;
   width: 220px;
   height: 240px;
-  margin: 70px 0 0 auto;
+  margin-left: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px 0px rgb(0 0 0 / 10%);
   ul {
@@ -45,7 +45,7 @@ const Sidebar = ({ toggle }) => (
       <StyledSidebar>
         <ul>
           <li>
-            <Link to="/" className="sidebar-link">
+            <Link to="#work" className="sidebar-link">
               Work
             </Link>
           </li>

@@ -4,15 +4,20 @@ import Navbar from "./navbar"
 import Sidebar from "./sidebar"
 import styled from "styled-components"
 
-const StyledNav = styled.nav`
-  padding: 12px 20px 0 20px;
+const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
   background: #ffffff;
+  height: 10vh;
+  z-index: 7;
+`
 
+const StyledNav = styled.nav`
+  padding: 12px 20px 5px 20px;
+  height: 100%;
   .nav-container-sm {
-    height: 3rem;
+    height: 100%;
     text-align: center;
     display: flex;
     align-items: flex-end;
@@ -23,7 +28,6 @@ const StyledNav = styled.nav`
 
 const StyledMenu = styled.button`
   position: relative;
-  z-index: 6;
   background: transparent;
   width: 1.5rem;
   height: 1.35rem;
@@ -72,7 +76,7 @@ const Header = () => {
   )
 
   return (
-    <header>
+    <StyledHeader>
       <StyledNav>
         <div className="nav-container-sm">
           <Logo />
@@ -81,7 +85,7 @@ const Header = () => {
         </div>
         <Sidebar toggle={open} />
       </StyledNav>
-    </header>
+    </StyledHeader>
   )
 }
 
