@@ -83,8 +83,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ul {
-        list-style-type: disc;
-        list-style-position: outside;
+        list-style: none;
         margin: 0;
         padding: 0;
     }
@@ -93,11 +92,9 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: .25em;
         display: list-item;
         text-align: -webkit-match-parent;
-        color: #000000;
-        font-weight: 600;
-        &::marker {
-            color: #404040;
-        }
+        color: #333333;
+        font-weight: 800;
+        font-size: .75rem;
     }
 
     button {

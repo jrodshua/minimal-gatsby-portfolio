@@ -12,6 +12,7 @@ export const projectObj = {
       `Sanity Headless CMS`,
       `Styled Components`,
     ],
+    projectClass: `project-usagi`,
   },
   plantFather: {
     type: `Gatsby Starter`,
@@ -21,6 +22,7 @@ export const projectObj = {
         information about each track. Create and save new playlists of
         recommended tracks based on your existing playlists and more.`,
     list: [`NextJs/React`, `Stripe API`, `Bulma.io`, `SSR`],
+    projectClass: `project-plant`,
   },
   jira: {
     type: `Task Tracking Web App`,
@@ -30,6 +32,7 @@ export const projectObj = {
     information about each track. Create and save new playlists of
     recommended tracks based on your existing playlists and more.`,
     list: [`NextJS/React`, `Evergreen-Ui`, `SSR`, `MongoDB`],
+    projectClass: `project-jira`,
   },
 }
 
