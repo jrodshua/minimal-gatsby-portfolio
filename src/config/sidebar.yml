@@ -1,20 +1,28 @@
 # Sidebar navigation
 
-- label: 'Introduction'
-  link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: "Overview"
+  link: "/"
+- label: Work
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
-- label: More
+    - label: "Client eComm Project"
+      link: "/work/usagi-bakery"
+    - label: "Project/Task Tracking App"
+      link: "/work/ops-party"
+    - label: "WebRTC Party Chat"
+      link: "/work/partyy"
+- label: Profile
   items:
-    - label: FAQ
-      link: /faq
-    - label: 'Github'
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: "About me"
+      link: "/profile/about-me"
+    - label: "Experience"
+      link: "/profile/experience"
+    - label: "Contact"
+      link: "/profile/contact"
+- label: Links
+  items:
+    - label: "Github"
+      link: https://github.com/jrodshua
+    - label: "LinkedIn"
+      link: https://www.linkedin.com/in/jrodshua/
+    - label: "Twitter"
+      link: https://twitter.com/jrodshua
