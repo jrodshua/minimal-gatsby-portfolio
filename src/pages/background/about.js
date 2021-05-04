@@ -21,18 +21,6 @@ const About = () => {
         sold out poutine heirloom mumblecore master cleanse poke tbh synth
         butcher DIY. Deep v wayfarers gochujang tofu chia literally copper mug.
       </p>
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/jrodshua">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jrodshua/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/jrodshua">Twitter</a>
-        </li>
-      </ul>
     </Layout>
   )
 }

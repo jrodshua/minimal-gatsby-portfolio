@@ -78,15 +78,31 @@ const Sidebar = ({ isMenuOpen }) => {
           <Heading>Links</Heading>
           <SubItem>
             <Item>
-              <a href="https://github.com/jrodshua">GitHub {icon}</a>
+              <a
+                href="https://github.com/jrodshua"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub {icon}
+              </a>
             </Item>
             <Item>
-              <a href="https://www.linkedin.com/in/jrodshua/">
+              <a
+                href="https://www.linkedin.com/in/jrodshua/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 LinkedIn {icon}
               </a>
             </Item>
             <Item>
-              <a href="https://twitter.com/jrodshua">Twitter {icon}</a>
+              <a
+                href="https://twitter.com/jrodshua"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter {icon}
+              </a>
             </Item>
           </SubItem>
         </List>

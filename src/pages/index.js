@@ -24,55 +24,98 @@ const IndexPage = () => (
         <span role="img" aria-label="Atom symbol emoji">
           ⚛️
         </span>{" "}
-        I mostly build with React, Gatsby, or Next.js
+        I build with React, Gatsby, or Next.js
       </li>
       <li>
         <span role="img" aria-label="Shopping trolley emoji">
           🛒
         </span>{" "}
-        Check out a client eCommerce project I built:{" "}
-        <a href="https://www.usagibakery.com/">Usagi.Bakery</a>
+        Client eCommerce site{" "}
+        <a
+          href="https://www.usagibakery.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Usagi.Bakery
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Briefcase Emoji">
           💼
         </span>{" "}
-        Or an employee hours/pay application I built for a friend:{" "}
-        <a href="https://github.com/jrodshua">Ops Party</a>
+        Lightweight voice chat{" "}
+        <a
+          href="https://nonversation.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nonversation
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Pushpin emoji">
           📌
         </span>{" "}
-        Here's what I'm currently working on:{" "}
-        <a href="https://github.com/jrodshua">Partyy</a>
+        UI milkbar clone{" "}
+        <a
+          href="https://flamboyant-yonath-0a114d.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Partyy
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Cat face emoji">
           🐱
         </span>{" "}
-        Everything else can be found on my{" "}
-        <a href="https://github.com/jrodshua">github</a>
+        All other projects{" "}
+        <a
+          href="https://github.com/jrodshua"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Bust in silhouette emoji">
           👤
         </span>{" "}
         Looking for my{" "}
-        <a href="https://www.linkedin.com/in/jrodshua/">LinkedIn?</a>
+        <a
+          href="https://www.linkedin.com/in/jrodshua/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn?
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Page facing up emoji">
           📄
         </span>{" "}
-        Need my <a href="https://google.com">resume?</a>
+        Need my{" "}
+        <a
+          href="https://drive.google.com/file/d/1vY4Zz-qlQ9ZCT6CL4QGDMF1LJFH6tEK2/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume?
+        </a>
       </li>
       <li>
         <span role="img" aria-label="Envelope Emoji">
           ✉️
         </span>{" "}
-        Here's my email:{" "}
-        <a href="mailto:jrodshua@gmail.com">jrodshua@gmail.com</a>
+        Here's my email{" "}
+        <a
+          href="mailto:jrodshua@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          jrodshua@gmail.com
+        </a>
       </li>
     </ul>
     <Link to="/background/contact">Let's connect!</Link>

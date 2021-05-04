@@ -12,7 +12,7 @@ const Resume = () => {
       <h2>Work Summary</h2>
       <Table />
       <h2>Skills</h2>
-      <ul>
+      <ul style={{ marginBottom: "1rem" }}>
         <li>HTML, CSS, JS</li>
         <li>React, Gatsby, Next</li>
         <li>Node, Express</li>

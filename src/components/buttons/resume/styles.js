@@ -1,9 +1,11 @@
 import styled from "@emotion/styled"
 
-export const Button = styled.button`
+export const Anchor = styled.a`
+  display: block;
   margin-top: 2rem;
+  text-align: center;
   border: none;
-  width: 200px;
+  width: 160px;
   background: #c52652;
   color: #ffffff;
   padding: 1rem;

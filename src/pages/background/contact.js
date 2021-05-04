@@ -23,13 +23,23 @@ const Contact = () => {
           <tr>
             <td>Email</td>
             <td>
-              <a href="mailto:jrodshua@gmail.com">jrodshua@gmail.com</a>
+              <a
+                href="mailto:jrodshua@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                jrodshua@gmail.com
+              </a>
             </td>
           </tr>
           <tr>
             <td>LinkedIn</td>
             <td>
-              <a href="https://www.linkedin.com/in/jrodshua/">
+              <a
+                href="https://www.linkedin.com/in/jrodshua/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 linkedin.com/in/jrodshua/
               </a>
             </td>
@@ -37,13 +47,25 @@ const Contact = () => {
           <tr>
             <td>GitHub</td>
             <td>
-              <a href="https://github.com/jrodshua">github.com/jrodshua</a>
+              <a
+                href="https://github.com/jrodshua"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/jrodshua
+              </a>
             </td>
           </tr>
           <tr>
             <td>Twitter</td>
             <td>
-              <a href="https://twitter.com/jrodshua">twitter.com/jrodshua</a>
+              <a
+                href="https://twitter.com/jrodshua"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                twitter.com/jrodshua
+              </a>
             </td>
           </tr>
         </tbody>
