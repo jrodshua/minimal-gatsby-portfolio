@@ -40,8 +40,8 @@ const IndexPage = () => (
         </a>
       </li>
       <li>
-        <span role="img" aria-label="Briefcase Emoji">
-          💼
+        <span role="img" aria-label="Speaking head Emoji">
+          🗣️
         </span>{" "}
         Lightweight voice chat{" "}
         <a
@@ -53,8 +53,8 @@ const IndexPage = () => (
         </a>
       </li>
       <li>
-        <span role="img" aria-label="Pushpin emoji">
-          📌
+        <span role="img" aria-label="Shortcake emoji">
+          🍰
         </span>{" "}
         UI milkbar clone{" "}
         <a
@@ -62,7 +62,7 @@ const IndexPage = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Partyy
+          FakeryBakery
         </a>
       </li>
       <li>
@@ -97,7 +97,7 @@ const IndexPage = () => (
         </span>{" "}
         Need my{" "}
         <a
-          href="https://drive.google.com/file/d/1vY4Zz-qlQ9ZCT6CL4QGDMF1LJFH6tEK2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1JgcJcm3HAu-m5GCxQHGN8pCDpao4K4lS/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

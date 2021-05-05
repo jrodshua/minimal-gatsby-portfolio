@@ -109,7 +109,7 @@ export const Item = styled.li`
     svg {
       width: 20px;
       height: 20px;
-      margin-left: 5px;
+      margin-left: 15px;
     }
 
     &:not(.active-link):hover {

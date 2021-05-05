@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+/* @jsx jsx */
+import { css, jsx } from "@emotion/react"
 import {
   Container,
   LogoContainer,

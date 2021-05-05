@@ -5,7 +5,7 @@ import { Anchor } from "./styles"
 const ResumeButton = () => {
   return (
     <Anchor
-      href="https://drive.google.com/file/d/1vY4Zz-qlQ9ZCT6CL4QGDMF1LJFH6tEK2/view?usp=sharing"
+      href="https://drive.google.com/file/d/1JgcJcm3HAu-m5GCxQHGN8pCDpao4K4lS/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
     >

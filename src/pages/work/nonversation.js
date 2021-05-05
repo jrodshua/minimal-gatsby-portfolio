@@ -29,7 +29,7 @@ const Nonversation = () => {
         API (client-side) and the blog is handled using Sanity headless CMS (I
         built the schema and hosted it seperately)
       </p>
-      <h3>Highlights & Problems Solved:</h3>
+      <h3>Problems Solved:</h3>
       <ul>
         <li>Needed fast performant site</li>
         <li>Available offline for product viewing</li>
