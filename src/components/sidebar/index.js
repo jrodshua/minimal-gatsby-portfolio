@@ -52,8 +52,8 @@ const Sidebar = ({ isMenuOpen }) => {
               </Link>
             </Item>
             <Item>
-              <Link to="/work/thirdProject" activeClassName="active-link">
-                Agile Task Tracker
+              <Link to="/work/fakeryBakery" activeClassName="active-link">
+                FakeryBakery
               </Link>
             </Item>
           </SubItem>
