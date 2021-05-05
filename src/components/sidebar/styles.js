@@ -25,6 +25,7 @@ export const Container = styled.aside`
   @media (max-width: 780px) {
     max-width: 75%;
     min-width: auto;
+    min-height: 100%;
     z-index: 1001;
     position: fixed;
     top: 0;
