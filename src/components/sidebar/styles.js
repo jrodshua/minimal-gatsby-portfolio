@@ -30,7 +30,7 @@ export const Container = styled.aside`
     top: 0;
     bottom: 0;
     left: 0;
-    padding-top: 32px;
+    padding-top: 22px;
     background: ${({ theme }) => theme.colors.background};
     transform: translate3d(
       ${({ isMenuOpen }) => (isMenuOpen ? "0" : "-100%")},
