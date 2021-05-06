@@ -33,16 +33,18 @@ const Table = () => {
       <td colSpan={3}>
         <ul>
           <li>
-            At the beginning of each bullet point, use an action verb to
-            immediately catch the employer’s
+            Program owner for both NV Express Drive & Driver Advisory Council
           </li>
           <li>
-            Remember, how can you add value to the employer who reads this? Use
-            examples with numbers
+            Responsible for leading a team of 9 associates, across 3 remote
+            sites
           </li>
           <li>
-            Keep your resume quick and to the point. You can use your cover
-            letter to expand on areas you
+            Oversaw all rental vehicle/driver ops & Hertz/Pep Boys partnerships
+          </li>
+          <li>
+            Developed initiatives to foster growth, team culture and streamline
+            processes
           </li>
         </ul>
       </td>
@@ -53,17 +55,11 @@ const Table = () => {
     <tr>
       <td colSpan={3}>
         <ul>
+          <li>Helped launch Uber Eats platform in Las Vegas, NV</li>
+          <li>Responsible for restaurant ops/accounts & new partnerships</li>
           <li>
-            At the beginning of each bullet point, use an action verb to
-            immediately catch the employer’s
-          </li>
-          <li>
-            Remember, how can you add value to the employer who reads this? Use
-            examples with numbers
-          </li>
-          <li>
-            Keep your resume quick and to the point. You can use your cover
-            letter to expand on areas you
+            Individually acquired 35% of all accounts available on platform at
+            launch
           </li>
         </ul>
       </td>
@@ -75,16 +71,12 @@ const Table = () => {
       <td colSpan={3}>
         <ul>
           <li>
-            At the beginning of each bullet point, use an action verb to
-            immediately catch the employer’s
+            Design pv systems, analyze energy data, and provide video
+            consultations
           </li>
           <li>
-            Remember, how can you add value to the employer who reads this? Use
-            examples with numbers
-          </li>
-          <li>
-            Keep your resume quick and to the point. You can use your cover
-            letter to expand on areas you
+            Achieved top 3 rank as an advisor, resulting in a promotion to
+            specialist
           </li>
         </ul>
       </td>

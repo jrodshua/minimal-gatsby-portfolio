@@ -36,6 +36,23 @@ const FakeryBakery = () => {
         <li>Cycling news/promotion banner, custom built using React hooks</li>
         <li>Category product filter, custom built using React hooks</li>
       </ul>
+      <span style={{ paddingBottom: 24 }}>
+        <a
+          style={{ marginRight: 16 }}
+          href="https://flamboyant-yonath-0a114d.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          FakeryBakery
+        </a>
+        <a
+          href="https://github.com/jrodshua/FakeryBakery-React-Ecomm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </span>
     </Layout>
   )
 }

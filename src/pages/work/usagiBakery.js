@@ -51,6 +51,23 @@ const UsagiBakery = () => {
         <li>Entirely built at no cost (excluding payment transaction fees)</li>
         <li>Fully functional client-facing CMS and product management</li>
       </ul>
+      <span style={{ paddingBottom: 24 }}>
+        <a
+          style={{ marginRight: 16 }}
+          href="https://www.usagibakery.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UsagiBakery
+        </a>
+        <a
+          href="https://github.com/jrodshua/usagiBakeryLiveSite"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </span>
     </Layout>
   )
 }

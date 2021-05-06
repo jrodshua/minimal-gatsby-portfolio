@@ -49,6 +49,23 @@ const Nonversation = () => {
           No account required means starting a convo is simple and very fast
         </li>
       </ul>
+      <span style={{ paddingBottom: 24 }}>
+        <a
+          style={{ marginRight: 16 }}
+          href="https://nonversation.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nonversation
+        </a>
+        <a
+          href="https://github.com/jrodshua/nonversation"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </span>
     </Layout>
   )
 }

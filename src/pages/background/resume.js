@@ -13,13 +13,17 @@ const Resume = () => {
       <Table />
       <h2>Skills</h2>
       <ul style={{ marginBottom: "1rem" }}>
-        <li>HTML, CSS, JS</li>
+        <li>HTML, CSS, JS, TS</li>
         <li>React, Gatsby, Next</li>
         <li>Node, Express</li>
+        <li>APIs, JSON</li>
+        <li>Bash, CL</li>
         <li>Git, GitHub</li>
-        <li>Bash</li>
-        <li>Nginx, pm2</li>
-        <li>APIs</li>
+        <li>Linux VM, Nginx, pm2</li>
+        <li>Communication</li>
+        <li>Problem-Solving</li>
+        <li>Interpersonal Skills</li>
+        <li>Learning</li>
       </ul>
       <ResumeButton />
     </Layout>
