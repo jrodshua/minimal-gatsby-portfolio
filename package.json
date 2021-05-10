@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "minimal-gatsby-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Josh Rodriguez Personal Portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Josh Rodriguez <jrodshua@gmail.com>",
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
