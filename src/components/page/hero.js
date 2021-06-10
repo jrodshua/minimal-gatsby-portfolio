@@ -33,6 +33,8 @@ const Section = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    padding: 6.25rem 0;
+
     .mobile-hero-icons {
       display: none;
     }

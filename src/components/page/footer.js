@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-  padding: 3.75rem 0;
-
-  border: 1px solid black;
+  padding: 3.75rem 0 0;
+  background: #e4e7d9;
+  border-top: 2px solid #242424;
 
   .footer-container {
     max-width: 1200px;
@@ -18,6 +18,7 @@ const StyledFooter = styled.footer`
     h2 {
       margin: 0.625rem 0 2.5rem;
       font-size: 2rem;
+      color: #242424;
     }
 
     p {
@@ -26,18 +27,37 @@ const StyledFooter = styled.footer`
 
     a {
       display: inline-block;
-      border: 1px solid black;
-      padding: 1rem 2.25rem;
+      border: 2px solid transparent;
+      padding: 1.125rem 0;
+      width: 40%;
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
       border-radius: 3px;
+      background: #ac5d5d;
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
 
       &:active {
-        background-color: #ff6340;
-        color: #fff;
+        background-color: #ac5d5d;
       }
     }
   }
 
+  .footer-bg {
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    margin-top: 60px;
+    background: #242424;
+  }
+
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    padding: 6.25rem 0 0;
+
     .footer-container {
       a {
         &:hover {
@@ -71,6 +91,7 @@ const Footer = () => {
         </p>
         <a href="/">Say hi</a>
       </div>
+      <div className="footer-bg" />
     </StyledFooter>
   )
 }

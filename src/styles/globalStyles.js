@@ -249,7 +249,43 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100%;
     font-size: 16px;
+    color: #242424;
   }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #fff;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 1.25rem 0; 
+  }
+  
+  @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    h2 {
+      margin: 0;
+    }
+
+    p {
+      font-size: clamp(1rem, 1rem + 0.5vh, 4em);
+      line-height: 2rem;
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.lg}) {
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    p {
+      line-height: 2.375rem;
+    }
+  }
+
 `
 
 export default GlobalStyle
