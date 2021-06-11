@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import WorkIcons from "../layout/workIcons"
+// import WorkIcons from "../layout/workIcons"
 
 const Section = styled.section`
   border: 1px solid #242424;
@@ -39,45 +39,88 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 30px;
+      overflow: hidden;
     }
 
     .project-item {
-      border: 2px solid #242424;
+      border: 1px solid #242424;
+      height: auto;
+      width: 100%;
+    }
+
+    .project-item-link {
+      height: 100%;
+      width: 100%;
+      display: block;
     }
 
     .project-item-img {
-      width: 100%;
-      height: auto;
-      max-height: 100%;
-      border-bottom: 2px solid #242424;
+      border-bottom: 1px solid #242424;
+      width: auto;
+      height: 175px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-position: 50% 40%;
+      }
     }
 
     .project-item-description {
       padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-info {
+      min-height: 80px;
       h3 {
         margin: 0 0.5rem 0;
       }
 
       span {
         display: block;
-        padding: 30px 0.5rem;
+        padding: 8px 0.5rem 15px;
       }
     }
 
     .project-tech-list {
+      flex-basis: 20%;
       display: flex;
       background: #242424;
-      align-items: center;
+      align-items: flex-start;
       line-height: 28px;
       font-size: 14px;
       padding: 0 0.5rem;
       color: #fff;
       ul {
         display: flex;
+        flex-wrap: wrap;
+        padding-left: 0.25rem;
         li {
           padding: 0 0.5rem;
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    .work-container {
+      .project-container-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project-item {
+        &:first-child {
+          grid-column: auto / span 2;
+        }
+      }
+
+      .project-item-img {
+        height: auto;
+        max-height: 350px;
       }
     }
   }
@@ -96,17 +139,20 @@ const FeaturedWork = () => {
                 <StaticImage
                   src="https://res.cloudinary.com/jrod-cdn/image/upload/v1623292669/portfolio%20assets/UsagiBakery_thumb_vluyjj.png"
                   className="project-item-img"
-                  loading="lazy"
+                  loading="eager"
                   placeholder="blurred"
                   objectFit="cover"
+                  quality={100}
                   alt=""
                 />
                 <div className="project-item-description">
-                  <h3>Usagi Bakery</h3>
-                  <span>
-                    Fully functional Stripe & Sanity CMS integrated ecommerce
-                    site for a local vegan bakery
-                  </span>
+                  <div className="project-info">
+                    <h3>Usagi Bakery</h3>
+                    <span>
+                      Fully functional Stripe & Sanity CMS integrated ecommerce
+                      site for a local vegan bakery
+                    </span>
+                  </div>
                   <div className="project-tech-list">
                     Tech:
                     <ul>
@@ -119,23 +165,90 @@ const FeaturedWork = () => {
                 </div>
               </Link>
             </div>
+
             <div className="project-item">
               <Link to="/" className="project-item-link">
                 <StaticImage
                   src="https://res.cloudinary.com/jrod-cdn/image/upload/v1623292669/portfolio%20assets/FakeryBakery_thumb_op36xn.png"
                   className="project-item-img"
-                  loading="lazy"
+                  loading="eager"
                   placeholder="blurred"
+                  quality={100}
                   objectFit="cover"
                   alt=""
                 />
                 <div className="project-item-description">
-                  <h3>Fakery Bakery</h3>
-                  <span>A UI MilkBar clone, built with React</span>
+                  <div className="project-info">
+                    <h3>Fakery Bakery</h3>
+                    <span>A UI MilkBar clone, built with React</span>
+                  </div>
                   <div className="project-tech-list">
                     Tech:
                     <ul>
                       <li>React</li>
+                    </ul>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="project-item">
+              <Link to="/" className="project-item-link">
+                <StaticImage
+                  src="https://res.cloudinary.com/jrod-cdn/image/upload/v1623368745/portfolio%20assets/Ableton_thumb_gyccok.png"
+                  className="project-item-img"
+                  loading="lazy"
+                  placeholder="blurred"
+                  quality={100}
+                  objectFit="cover"
+                  alt=""
+                />
+                <div className="project-item-description">
+                  <div className="project-info">
+                    <h3>FrontEnd Practice Collection</h3>
+                    <span>
+                      A collection of cloned websites, built using various front
+                      end technology
+                    </span>
+                  </div>
+                  <div className="project-tech-list">
+                    Tech:
+                    <ul>
+                      <li>JS</li>
+                      <li>React</li>
+                      <li>Gatsby</li>
+                      <li>Next.js</li>
+                    </ul>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="project-item">
+              <Link to="/" className="project-item-link">
+                <StaticImage
+                  src="https://res.cloudinary.com/jrod-cdn/image/upload/v1623369616/portfolio%20assets/Nonversation_thumb_cja7gl.png"
+                  className="project-item-img"
+                  loading="lazy"
+                  placeholder="blurred"
+                  quality={100}
+                  objectFit="cover"
+                  alt=""
+                />
+                <div className="project-item-description">
+                  <div className="project-info">
+                    <h3>Nonversation</h3>
+                    <span>
+                      Voice chat app, using WebRTC technology and built with the
+                      Twilio API
+                    </span>
+                  </div>
+                  <div className="project-tech-list">
+                    Tech:
+                    <ul>
+                      <li>React</li>
+                      <li>Twilio API</li>
+                      <li>WebRTC</li>
                     </ul>
                   </div>
                 </div>
@@ -149,201 +262,3 @@ const FeaturedWork = () => {
 }
 
 export default FeaturedWork
-
-// import React from "react"
-// import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
-// import styled from "styled-components"
-// import WorkIcons from "../layout/workIcons"
-
-// const Section = styled.section`
-//   border: 1px solid black;
-//   padding: 3.75rem 0;
-
-//   .featured-work-container {
-//     margin: 0 1.575rem;
-//     border: 1px solid red;
-
-//     h2 {
-//       margin: 0.625rem 0 2.5rem;
-//       font-size: 2rem;
-//     }
-//   }
-
-//   .featured-work-grid {
-//     display: grid;
-//     grid-template-columns: repeat(1, 1fr);
-//     grid-gap: 0.75rem;
-//   }
-
-//   .grid-item-link {
-//     padding: 1.75rem 0 0;
-//     border: 1px solid blue;
-//     background-color: rgba(0, 0, 0, 0.1);
-//     margin-bottom: 3rem;
-
-//     &:last-child {
-//       margin-bottom: 0;
-//     }
-//   }
-
-//   .grid-item-text {
-//     padding: 1.25rem 1rem 1rem;
-
-//     h3 {
-//       margin-bottom: 0.6rem;
-//       font-size: 1.375rem;
-//     }
-
-//     span {
-//       display: inline-block;
-//       font-size: 1rem;
-//     }
-//   }
-
-//   .featured-tech-list {
-//     padding: 0 0.5rem;
-//     display: flex;
-//     justify-content: flex-start;
-//     flex-wrap: wrap;
-//     margin-bottom: 0.5rem;
-
-//     li {
-//       line-height: 1.5;
-//       font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-//       font-size: 0.95rem;
-//       padding: 0 0.5rem;
-//     }
-//   }
-
-//   .featured-work-icons {
-//     display: flex;
-//     justify-content: flex-start;
-//     padding: 0 0.5rem;
-//     margin: 1.5rem 0 0.5rem;
-
-//     a {
-//       padding: 0.5rem;
-
-//       &:active {
-//         svg {
-//           fill: #ff6340;
-//         }
-//       }
-
-//       svg {
-//         width: 22px;
-//         height: 22px;
-//       }
-
-//       .ext-icon {
-//         width: 20px;
-//         height: 22px;
-//       }
-//     }
-//   }
-
-//   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
-//     padding: 6.25rem 0;
-
-//     .featured-work-icons {
-//       a {
-//         &:hover {
-//           svg {
-//             fill: #ff6340;
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
-// const FeaturedWork = () => {
-//   return (
-//     <Section id="work">
-//       <div className="max-width-page">
-//         <div className="featured-work-container">
-//           <h2>Featured Projects</h2>
-//           <div className="featured-work-grid">
-//             <div className="grid-item-link">
-//               <Link to="/">
-//                 <StaticImage
-//                   src="https://res.cloudinary.com/jrod-cdn/image/upload/v1622253531/portfolio%20assets/www.usagibakery.com__lyxzrk.png"
-//                   alt="UsagiBakery website"
-//                   loading="eager"
-//                 />
-//                 <div className="grid-item-text">
-//                   <h3>UsagiBakery</h3>
-//                   <span>
-//                     An ecommerce site built for a local bakery, featuring a
-//                     Sanity headless CMS and Stripe integration for a secure
-//                     payment experience
-//                   </span>
-//                 </div>
-//               </Link>
-//               <ul className="featured-tech-list">
-//                 <li>Gatsby</li>
-//                 <li>React</li>
-//                 <li>Stripe.js</li>
-//                 <li>Sanity.io</li>
-//               </ul>
-//               <WorkIcons iClass="featured-work-icons" />
-//             </div>
-
-//             <div className="grid-item-link">
-//               <Link to="/">
-//                 <StaticImage
-//                   src="https://res.cloudinary.com/jrod-cdn/image/upload/v1622253529/portfolio%20assets/jrodshua.github.io_FEPractice-Ableton__ixpkje.png"
-//                   alt="UsagiBakery website"
-//                   loading="eager"
-//                 />
-//                 <div className="grid-item-text">
-//                   <h3>UsagiBakery</h3>
-//                   <span>
-//                     An ecommerce site built for a local bakery, featuring a
-//                     Sanity headless CMS and Stripe integration for a secure
-//                     payment experience
-//                   </span>
-//                 </div>
-//               </Link>
-//               <ul className="featured-tech-list">
-//                 <li>Gatsby</li>
-//                 <li>React</li>
-//                 <li>Stripe.js</li>
-//                 <li>Sanity.io</li>
-//               </ul>
-//               <WorkIcons iClass="featured-work-icons" />
-//             </div>
-
-//             <div className="grid-item-link">
-//               <Link to="/">
-//                 <StaticImage
-//                   src="https://res.cloudinary.com/jrod-cdn/image/upload/v1622253529/portfolio%20assets/flamboyant-yonath-0a114d.netlify.app__ri5f52.png"
-//                   alt="UsagiBakery website"
-//                   loading="eager"
-//                 />
-//                 <div className="grid-item-text">
-//                   <h3>UsagiBakery</h3>
-//                   <span>
-//                     An ecommerce site built for a local bakery, featuring a
-//                     Sanity headless CMS and Stripe integration for a secure
-//                     payment experience
-//                   </span>
-//                 </div>
-//               </Link>
-//               <ul className="featured-tech-list">
-//                 <li>Gatsby</li>
-//                 <li>React</li>
-//                 <li>Stripe.js</li>
-//                 <li>Sanity.io</li>
-//               </ul>
-//               <WorkIcons iClass="featured-work-icons" />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </Section>
-//   )
-// }
-
-// export default FeaturedWork

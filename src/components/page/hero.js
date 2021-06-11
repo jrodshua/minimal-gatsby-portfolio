@@ -12,10 +12,20 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     border: 1px solid red;
+
+    h1 {
+      font-size: 1rem;
+    }
+
+    h2 {
+      color: #242424;
+      font-size: 1.5rem;
+    }
   }
 
   .mobile-hero-icons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2rem;
 
     a {

@@ -247,6 +247,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     width: 100%;
+    min-width: 240px;
     height: 100%;
     font-size: 16px;
     color: #242424;
