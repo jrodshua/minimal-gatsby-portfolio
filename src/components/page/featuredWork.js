@@ -5,7 +5,6 @@ import styled from "styled-components"
 // import WorkIcons from "../layout/workIcons"
 
 const Section = styled.section`
-  border: 1px solid #242424;
   padding: 3.75rem 0;
   position: relative;
 
@@ -16,7 +15,7 @@ const Section = styled.section`
     position: absolute;
     top: 0;
     z-index: 10;
-    background: blue;
+    background: #242424;
   }
 
   .work-container-bg {
@@ -43,9 +42,12 @@ const Section = styled.section`
     }
 
     .project-item {
-      border: 1px solid #242424;
+      border: 1px solid rgba(36, 36, 36, 0.15);
       height: auto;
       width: 100%;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: transparent;
     }
 
     .project-item-link {
@@ -55,7 +57,7 @@ const Section = styled.section`
     }
 
     .project-item-img {
-      border-bottom: 1px solid #242424;
+      border-bottom: 1px solid rgba(36, 36, 36, 0.15);
       width: auto;
       height: 175px;
 
@@ -107,7 +109,19 @@ const Section = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    padding: 5.675rem 0;
+
+    .work-bg {
+      height: 140px;
+    }
+
     .work-container {
+      max-width: 800px;
+
+      .work-container-bg {
+        padding: 4.625rem 0;
+      }
+
       .project-container-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -121,6 +135,44 @@ const Section = styled.section`
       .project-item-img {
         height: auto;
         max-height: 350px;
+      }
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.lg}) {
+    padding: 7.5rem 0;
+
+    .work-bg {
+      background: #242424;
+      width: 100%;
+      height: 180px;
+    }
+
+    .work-container {
+      width: 92%;
+      max-width: 100%;
+
+      h2 {
+        width: 67%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .work-container-bg {
+        padding: 5.625rem 0;
+        background: #fff;
+      }
+
+      .project-container-grid {
+        width: 67%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+      }
+
+      .project-item-img {
+        max-height: 460px;
       }
     }
   }

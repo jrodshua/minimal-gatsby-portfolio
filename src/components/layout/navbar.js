@@ -10,7 +10,7 @@ const Nav = styled.nav`
   }
 
   li {
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
 
   a:hover {

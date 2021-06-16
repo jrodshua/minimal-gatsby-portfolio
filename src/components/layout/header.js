@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
   height: 80px;
   z-index: 45;
 
-  background-color: #f5f0e1;
+  background-color: #fff;
 
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
     position: relative;
@@ -25,9 +25,10 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 2.25rem 2.5rem 0.5rem;
+  padding: 2rem 0 0.5rem;
+  width: 88%;
   height: 100%;
 
-  max-width: 1200px;
   margin: 0 auto;
 
   .logo-container {
@@ -40,9 +41,16 @@ const Container = styled.div`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
+    max-width: 800px;
+
     .logo-container {
       width: 60%;
     }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.lg}) {
+    width: 67%;
+    max-width: 1200px;
   }
 `
 

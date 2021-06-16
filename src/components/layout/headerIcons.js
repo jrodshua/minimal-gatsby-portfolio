@@ -11,7 +11,7 @@ const Container = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #1e3d59;
+    background-color: #242424;
     z-index: 46;
 
     .desktop-header-icons {
@@ -19,7 +19,7 @@ const Container = styled.div`
       width: 100%;
       justify-content: flex-end;
       padding-right: 1.5rem;
-      max-width: 1200px;
+      width: 95%;
       margin: 0 auto;
 
       a {

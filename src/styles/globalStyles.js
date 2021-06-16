@@ -254,7 +254,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0;
     color: #fff;
   }

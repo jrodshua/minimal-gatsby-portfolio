@@ -90,7 +90,7 @@ const Section = styled.section`
     }
 
     .about-container-bg {
-      background: #fff;
+      background: transparent;
       padding: 4.625rem 0;
     }
 
@@ -98,8 +98,15 @@ const Section = styled.section`
       padding: 0;
       background-color: transparent;
 
+      h2 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       h3 {
-        width: 80%;
+        width: 90%;
+        max-width: 780px;
         margin: 0 auto;
         line-height: 34px;
       }
@@ -109,6 +116,8 @@ const Section = styled.section`
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
       }
 
       .about-sidebar-container {
@@ -146,7 +155,8 @@ const Section = styled.section`
       padding: 0;
 
       h2 {
-        width: 80%;
+        max-width: 1200px;
+        width: 67%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -154,22 +164,20 @@ const Section = styled.section`
       .about-container-bg {
         background: #fff;
         padding: 5.625rem 0;
-        border-radius: 3px;
-        box-shadow: 0 1.8px 1.7px -24px rgba(0, 0, 0, 0.053),
-          0 6px 5.6px -24px rgba(0, 0, 0, 0.077),
-          0 27px 25px -24px rgba(0, 0, 0, 0.13);
-      }
+        
 
       h3 {
         font-size: 2.5rem;
         line-height: 3.275rem;
         padding: 5.625rem 0;
         width: 67%;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
       .about-description-container {
         width: 67%;
+        max-width: 1000px;
         margin: 0 auto;
       }
 
@@ -184,7 +192,8 @@ const Section = styled.section`
 
       .desktop-about-img {
         display: block;
-        width: 80%;
+        width: 67%;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
       }

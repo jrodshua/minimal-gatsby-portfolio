@@ -2,76 +2,68 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledFooter = styled.footer`
-  padding: 3.75rem 0 0;
-  background: #e4e7d9;
-  border-top: 2px solid #242424;
+  padding: 3.75rem 0;
+  background: #242424;
 
   .footer-container {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0 1.575rem;
+    padding: 3.75rem 0;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
 
     h2 {
-      margin: 0.625rem 0 2.5rem;
-      font-size: 2rem;
-      color: #242424;
+      text-align: center;
     }
 
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     a {
-      display: inline-block;
-      border: 2px solid transparent;
+      display: block;
+      border: 2px solid white;
       padding: 1.125rem 0;
       width: 40%;
       max-width: 200px;
-      margin-left: auto;
-      margin-right: auto;
+      background-color: #fff;
+      color: #242424;
       text-align: center;
+      margin: 0 auto;
       border-radius: 3px;
-      background: #ac5d5d;
       font-weight: bold;
       font-size: 18px;
-      color: #fff;
 
       &:active {
         background-color: #ac5d5d;
+        color: #fff;
       }
     }
-  }
-
-  .footer-bg {
-    content: "";
-    width: 100%;
-    height: 100%;
-    padding-top: 60px;
-    margin-top: 60px;
-    background: #242424;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
-    padding: 6.25rem 0 0;
-
+    padding: 5.675rem;
     .footer-container {
+      h2 {
+        padding-bottom: 30px;
+      }
+      p {
+        max-width: 1000px;
+        margin-top: 0;
+        margin-bottom: 60px;
+      }
+
       a {
         &:hover {
-          background-color: #ff6340;
+          background-color: #ac5d5d;
           color: #fff;
-          border-color: #fff;
+          border-color: #ac5d5d;
         }
       }
-    }
-  }
-
-  @media (min-width: 1200px) {
-    .footer-container {
-      margin: 0 auto;
     }
   }
 `
@@ -91,7 +83,6 @@ const Footer = () => {
         </p>
         <a href="/">Say hi</a>
       </div>
-      <div className="footer-bg" />
     </StyledFooter>
   )
 }
