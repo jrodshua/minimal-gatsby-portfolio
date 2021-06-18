@@ -1,31 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
-import Social from "../layout/social"
+// import Social from "../layout/social"
+import Weather from "../layout/weather"
 
 const Section = styled.section`
-  padding: 3.75rem 0;
+  padding: 2.5rem 0 3.75rem;
 
   .hero-container {
     width: 88%;
     margin: 0 auto;
-    padding: 3.75rem 0;
 
     h1 {
-      font-size: 1rem;
-      padding-bottom: 25px;
-    }
-
-    h2 {
-      color: #242424;
-      font-size: 1.5rem;
-      font-weight: normal;
-      line-height: 36px;
-      padding-bottom: 15px;
+      font-size: 1.35rem;
+      padding-bottom: 10px;
+      line-height: 30px;
     }
 
     p {
       font-size: 1rem;
-      line-height: 28px;
+      line-height: 24px;
       padding-bottom: 40px;
       margin: 0;
     }
@@ -36,6 +29,71 @@ const Section = styled.section`
       justify-content: space-between;
       width: 60%;
       max-width: 160px;
+    }
+
+    .weather-toggle-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .weather-toggle-label {
+      padding-bottom: 0;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: lowercase;
+      margin-right: 0.5rem;
+    }
+
+    .weather-toggle {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 20px;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .weather-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ccc;
+        background: ${({ isCheck }) => (isCheck ? "#2196f3" : "ccc")};
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+
+        &:before {
+          position: absolute;
+          content: "";
+          height: 16px;
+          width: 16px;
+          left: 2px;
+          bottom: 2px;
+          background-color: white;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          transform: ${({ isCheck }) =>
+            isCheck ? "translateX(20px)" : "translateX(0)"};
+          -webkit-transform: ${({ isCheck }) =>
+            isCheck ? "translateX(20px)" : "translateX(0)"};
+        }
+      }
+
+      .weather-slider,
+      round {
+        border-radius: 34px;
+
+        &:before {
+          border-radius: 50%;
+        }
+      }
     }
   }
 
@@ -136,21 +194,32 @@ const Section = styled.section`
 `
 
 const Hero = () => {
+  const [isChecked, setIsChecked] = useState(false)
+
   return (
-    <Section className="hero">
+    <Section className="hero" isCheck={isChecked}>
       <div className="hero-container">
         <div className="hero-content">
-          <h1>Hello, I'm Josh</h1>
-          <h2>
-            I'm a front end developer and cold weather person based in Las
-            Vegas, NV
-          </h2>
+          <h1>
+            I’m Josh, a front end developer and cold weather person, currently
+            based in Las Vegas, NV
+          </h1>
           <p>
-            When I'm not building stuff for the web, I'm usually trying to
-            decide if I should walk my dog at 7pm in 105&deg; weather or at 8pm
-            in 103&deg; weather
+            When I’m not at my desk building something for the web, I’m usually
+            at home, hiding from the scorching, unrelenting sun
           </p>
-          <Social iClass="mobile-hero-icons" />
+          <div className="weather-toggle-container">
+            <p className="weather-toggle-label">my life</p>
+            <div
+              className="weather-toggle"
+              onClick={() => setIsChecked(!isChecked)}
+            >
+              <input type="checkbox" checked={isChecked} />
+              <span className="weather-slider round"></span>
+            </div>
+          </div>
+          <Weather isChecked={isChecked} />
+          {/* <Social iClass="mobile-hero-icons" /> */}
         </div>
       </div>
     </Section>
