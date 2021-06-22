@@ -79,6 +79,23 @@ const Home = () => {
                 </div>
               </div>
             </section>
+            <section id='featured-projects'>
+              <div className='projects'>
+                <h3>Some recent projects:</h3>
+                <div className='project-container'>
+                  <a
+                    href="https://github.com/jrodshua/usagiBakeryLiveSite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >UsagiBakery</a>
+                  <a
+                    href="https://github.com/jrodshua/URLurker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >URLurker</a>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
       </div>
