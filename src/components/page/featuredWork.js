@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-// import WorkIcons from "../layout/workIcons"
 
 const Section = styled.section`
   padding: 3.75rem 0;

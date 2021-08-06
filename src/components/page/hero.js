@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
-// import Social from "../layout/social"
-import Weather from "../layout/weather"
+import Social from "../layout/social"
+import HeroTextAni from "../layout/heroTextAni"
 
 const Section = styled.section`
   padding: 2.5rem 0 3.75rem;
@@ -11,16 +11,40 @@ const Section = styled.section`
     margin: 0 auto;
 
     h1 {
-      font-size: 1.35rem;
-      padding-bottom: 10px;
-      line-height: 30px;
+      font-size: 1.1rem;
+      color: #282828;
+      padding-bottom: 30px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-span {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #000;
+      line-height: 36px;
+      display: inline;
+      font-weight: 300;
+      color: #000;
     }
 
     p {
-      font-size: 1rem;
-      line-height: 24px;
-      padding-bottom: 40px;
+      display: inline;
+      font-size: 1.3rem;
       margin: 0;
+      padding-left: 6px;
+      font-weight: 400;
+      color: #282828;
+    }
+
+    .text-transition {
+      font-weight: 300;
+      line-height: 36px;
+      color: #000;
+      margin-top: -5px;
     }
 
     .mobile-hero-icons {
@@ -29,71 +53,7 @@ const Section = styled.section`
       justify-content: space-between;
       width: 60%;
       max-width: 160px;
-    }
-
-    .weather-toggle-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .weather-toggle-label {
-      padding-bottom: 0;
-      font-weight: 500;
-      font-size: 14px;
-      text-transform: lowercase;
-      margin-right: 0.5rem;
-    }
-
-    .weather-toggle {
-      position: relative;
-      display: block;
-      width: 40px;
-      height: 20px;
-
-      input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-      }
-
-      .weather-slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #ccc;
-        background: ${({ isCheck }) => (isCheck ? "#2196f3" : "ccc")};
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-
-        &:before {
-          position: absolute;
-          content: "";
-          height: 16px;
-          width: 16px;
-          left: 2px;
-          bottom: 2px;
-          background-color: white;
-          -webkit-transition: 0.4s;
-          transition: 0.4s;
-          transform: ${({ isCheck }) =>
-            isCheck ? "translateX(20px)" : "translateX(0)"};
-          -webkit-transform: ${({ isCheck }) =>
-            isCheck ? "translateX(20px)" : "translateX(0)"};
-        }
-      }
-
-      .weather-slider,
-      round {
-        border-radius: 34px;
-
-        &:before {
-          border-radius: 50%;
-        }
-      }
+      margin-top: 60px;
     }
   }
 
@@ -112,11 +72,13 @@ const Section = styled.section`
       h2 {
         font-size: 2.25rem;
         line-height: 50px;
-        padding-bottom: 20px;
       }
 
       p {
         font-size: 1.375rem;
+      }
+
+      .text-transition {
         line-height: 40px;
         padding-bottom: 60px;
       }
@@ -147,7 +109,6 @@ const Section = styled.section`
       h2 {
         font-size: 3.5rem;
         line-height: 78px;
-        padding-bottom: 25px;
       }
 
       p {
@@ -194,32 +155,20 @@ const Section = styled.section`
 `
 
 const Hero = () => {
-  const [isChecked, setIsChecked] = useState(false)
-
   return (
-    <Section className="hero" isCheck={isChecked}>
+    <Section className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <h1>
-            I’m Josh, a front end developer and cold weather person, currently
-            based in Las Vegas, NV
-          </h1>
-          <p>
-            When I’m not at my desk building something for the web, I’m usually
-            at home, hiding from the scorching, unrelenting sun
-          </p>
-          <div className="weather-toggle-container">
-            <p className="weather-toggle-label">my life</p>
-            <div
-              className="weather-toggle"
-              onClick={() => setIsChecked(!isChecked)}
-            >
-              <input type="checkbox" checked={isChecked} />
-              <span className="weather-slider round"></span>
-            </div>
-          </div>
-          <Weather isChecked={isChecked} />
-          {/* <Social iClass="mobile-hero-icons" /> */}
+          <h1>Hello, I'm Josh</h1>
+          <span className="hero-span">
+            <h2>
+              I'm a new Software Engineer, with a focus on the front-end and
+              currently working towards full-stack.
+            </h2>
+            <p>I'm also a...</p>
+          </span>
+          <HeroTextAni />
+          <Social iClass="mobile-hero-icons" />
         </div>
       </div>
     </Section>
@@ -227,80 +176,3 @@ const Hero = () => {
 }
 
 export default Hero
-
-// import React from "react"
-// import styled from "styled-components"
-// import Social from "../layout/social"
-
-// const Section = styled.section`
-//   border: 1px solid black;
-//   padding-top: 5rem;
-//   padding-bottom: 4.5rem;
-
-//   .hero-container {
-//     margin: 0 1.575rem;
-//     display: flex;
-//     flex-direction: column;
-//     border: 1px solid red;
-
-//     h1 {
-//       font-size: 1rem;
-//     }
-
-//     h2 {
-//       color: #242424;
-//       font-size: 1.5rem;
-//     }
-//   }
-
-//   .mobile-hero-icons {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-top: 2rem;
-
-//     a {
-//       padding: 0.5rem 0.7rem;
-
-//       &:active {
-//         svg {
-//           fill: #ff6340;
-//         }
-//       }
-//     }
-
-//     svg {
-//     }
-//   }
-
-//   @media (min-width: ${({ theme }) => theme.breakpoint.sm}) {
-//     padding: 6.25rem 0;
-
-//     .mobile-hero-icons {
-//       display: none;
-//     }
-//   }
-// `
-
-// const Hero = () => {
-//   return (
-//     <Section className="hero">
-//       <div className="max-width-page">
-//         <div className="hero-container">
-//           <h1>Hello, I'm Josh</h1>
-//           <h2>
-//             I'm a front end developer and cold weather person based in Las
-//             Vegas, NV
-//           </h2>
-//           <p>
-//             When I'm not building stuff for the web, I'm usually trying to
-//             decide if I should walk my dog at 7pm in 105&deg; weather or at 8pm
-//             in 103&deg; weather
-//           </p>
-//           <Social iClass="mobile-hero-icons" />
-//         </div>
-//       </div>
-//     </Section>
-//   )
-// }
-
-// export default Hero
